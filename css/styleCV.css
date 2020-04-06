@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Patua+One|Baloo+Thambi+2|Nunito+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Patua+One|Baloo+Thambi+2|Do+Hyeon&display=swap');
 
 :root {
   --main-bg-color:rgb(235, 235, 235);
@@ -17,8 +17,8 @@
 
 body {
 	background: var(--main-bg-color);
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: .9em;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 1em;
 	color:var(--main-txt-color);	
 }
 
@@ -29,9 +29,8 @@ header {
 }
 
 
-main {		
-	font-size:0.9em;
-	flex: 1 500px;
+main {			
+	flex: 2 500px;
     padding: 2rem;
 	
 }
@@ -41,13 +40,7 @@ address{
 	color:var(--main-txt-color);	
 }
 
-main li {	
-	margin:0;	
-	border-left: 3px solid;	
-    padding: 0px 0px 20px 20px;
-    vertical-align: middle;
-    
-}
+
 
 h1,h3,h5{
 	text-align: center;
@@ -103,15 +96,24 @@ button{
 	cursor:pointer;
 }
 
-ul li ul li{
- border:0;
- padding:0;
- margin:0 0 0 15px;
- list-style: square;
+
+main p{
+	font-size:1.3rem;
+	margin-bottom:15px;
 }
 
-main p, main ul{
-	color:var(--main-txt-color);	
+#main{
+	display: flex;
+  	width: 100%;
+  	height: 100vh;		
+	flex-wrap: wrap;
+}
+
+.cv-item{
+	border:2px solid;
+	padding: 0.4rem;
+	margin: 1.5rem 0.2rem;  	  
+	flex:1 350px;	
 }
 
 #header i{
@@ -125,33 +127,29 @@ main p, main ul{
 	margin:0;
 }
 
+#main li{
+	list-style-type: square;
+	list-style-position: inside;
+}
+
 i:hover{
 	color:var(--second-color);
 }
 
-#skills {
-	float:left;
-	width: 80%;
-	font-size: .9em;
-}
-#skills ul{
-	margin-right:20px;
-	padding-top:10px;
-	border-top:1px dotted;
-	border-left:1px dotted;
-	border-bottom:1px dotted;
-}
-#skills ul li{
-	list-style: none;
-	padding-bottom:7px;	
-	border:none;
-}
 
 #language {
 	font-size:.9em;
 }
+#skills{
+	display:inline-block;
+}
+#skills ul li{
+	margin-bottom:0.2em;
+}
+
 #points{
 	margin-bottom: 10px;
+	float:right;
 }
 #points li{
 	list-style: none !important;	
@@ -177,7 +175,7 @@ i:hover{
 	/*border-radius: 50%;*/
 	filter:grayscale(50%);
 	margin:20px auto;
-	background-image: url("./images/noelia-rodriguez.png");
+	background-image: url("../images/noelia-rodriguez.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;	
