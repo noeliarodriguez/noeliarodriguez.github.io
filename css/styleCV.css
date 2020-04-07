@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Patua+One|Baloo+Thambi+2|Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Patua+One|Baloo+Thambi+2|Roboto+Slab:wght@300;500&display=swap');
 
 :root {
   --main-bg-color:rgb(235, 235, 235);
@@ -14,12 +14,13 @@
 	box-sizing: border-box;
 } 
 
-
-body {
+html{
 	background: var(--main-bg-color);
-	font-family: 'Do Hyeon', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
 	font-size: 1em;
 	color:var(--main-txt-color);	
+	word-wrap: break-word;
 }
 
 header {		
@@ -147,7 +148,7 @@ i:hover{
 
 #points{	
 	float:right;
-	margin:-165px 50px 0 0;	
+	margin:-180px 50px 0 0;	
 }
 #points li{
 	list-style: none !important;	
@@ -187,6 +188,10 @@ i:hover{
 	flex-direction: column;
 }
 
+::selection{
+	background-color:var(--main-txt-color) ;
+	color:var(--second-color);
+}
 
 
 
