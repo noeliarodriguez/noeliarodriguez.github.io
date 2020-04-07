@@ -8,18 +8,31 @@
 		<title>Noelia Rodriguez CV</title>			
 		<link rel="stylesheet" href="./css/styleCV.css">
 		<script src="https://kit.fontawesome.com/594ceb2e33.js" crossorigin="anonymous"></script>
+		<script>
+			function imprimir()
+			{
+				document.body.style.fontSize = ".8em";
+				window.print();
+			}			
+			function reset()
+			{
+				document.body.style.fontSize = "1em";
+			}
+		</script>
 	</head>
-	<body>
+	<body onafterprint="reset()">
 		<div id="container">			
 			<header>
 				<div id="header">
 					<nav>
 						<ul>							
 							<li><a href="./esCV.html"><img src="./images/spanish-icon.png" alt="Spanish version" width="16px"></a></li>					
-							<li><button onclick="window.print();"><i class="fas fa-print"></i></button></li>
+							<li><button onclick="imprimir()"><i class="fas fa-print"></i></button></li>
 						</ul>
 					</nav>
-					<div id="logo"></div>
+					<div id="logo">
+						<img src="./images/noelia-rodriguez.png" alt="Noelia Rodriguez">
+					</div>
 			<h1>< Noelia Rodriguez / ></h1>
 			<h5># FullStack Developer</h5>
 			<h3>Contact</h3>	
@@ -56,7 +69,7 @@
 			<div id="main">
 				<div class="cv-item">
 					<h3>Profile</h3>
-					<p>I'm a <strong>dedicated programmer</strong> with 6 years of experience in <em>differents tecnologies</em>. I've worked in desktop and web projects.</p>
+ 						<p>I'm a <strong>dedicated programmer</strong> with 6 years of experience in <em>differents tecnologies</em>. I've worked in desktop and web projects.</p>
 					<p> I'm an autodidact and enthusiastic person, I like to learn and have challenges to demostrate my skills every day. I hope I can contribute with my habilities and improve my training.</p>
 				</div>
 				<div class="cv-item">
