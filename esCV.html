@@ -10,20 +10,7 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- FAVICON -->
 		<title>Noelia Rodriguez CV</title>	
 		<link rel="stylesheet" href="./css/styleCV.css">
-		<script src="https://kit.fontawesome.com/594ceb2e33.js" crossorigin="anonymous"></script>
-		<script>
-			function imprimir()
-			{
-				document.body.style.fontSize = ".8em";
-				document.getElementById('points').style.display = 'none';
-				window.print();
-			}			
-			function reset()
-			{
-				document.body.style.fontSize = "1em";
-				document.getElementById('points').style.display = 'block';
-			}
-		</script>
+		<script src="https://kit.fontawesome.com/594ceb2e33.js" crossorigin="anonymous"></script>		
 	</head>
 	<body onafterprint="reset()">
 		<div id="container">			
@@ -32,7 +19,7 @@
 				<nav>
 					<ul>						
 						<li><a href="./index.html"><img src="./images/us-icon.png" alt="English version" width="16px"></a></li>					
-						<li><button onclick="imprimir()"><i class="fas fa-print"></i></button></li>
+						<li><button onclick="window.print()"><i class="fas fa-print"></i></button></li>
 					</ul>
 				</nav>	
 				<div id="logo">

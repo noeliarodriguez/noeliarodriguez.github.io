@@ -195,3 +195,17 @@ i:hover{
 
 
 
+@media print {
+	#points{
+		display:none;
+	}
+	body{
+		font-size: .9em;
+	}
+  }
+
+  @media (max-width:768px){
+	#points{
+		display:none;
+	}
+  }
