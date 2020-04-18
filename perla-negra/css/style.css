@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+:root{
+    --font-logo:'New Rocker',sans-serif;
+    --font-nav:'Anton',sans-serif;
+    --font-main:'Roboto',sans-serif;
+    --color-logo:rgb(39, 35, 29);
+    --bg-nav:rgb(238, 255, 0);
+    --bg-input:rgb(238, 255, 0,0.2);
+    --color-facebook:#3b5998;
+    --color-google:#D50F25;
+}
+
+
+.title-nav{
+    background-color:var(--bg-nav);
+    min-height: 50px;
+    padding:10px;
+    letter-spacing: .1rem;
+}
+
+
+.title-nav span{
+    color:var(--color-logo);
+    display:inline-block;    
+    line-height: 2rem;
+    font-family: var(--font-nav);
+}
+
+#logo {    
+    padding:2rem;
+    display: flex;
+
+}
+
+#logo h1{
+    font-family: var(--font-logo);
+    font-size: 2.5em;
+    margin:0 auto;    
+    display: inline-block;
+    padding-bottom:1rem;
+    border-bottom:10px dotted black;
+    color:var(--color-logo);
+}
+
+main{
+    font-family: var(--font-main);
+    font-weight: 300;    
+}
+
+.form{    
+    display:block;    
+    text-align: center;
+}
+
+.form-button{
+    margin-top:30px;
+}
+
+.form form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+}
+
+.form-item{    
+    flex:1;    
+    width: 100%;
+    padding:2px;
+    margin-bottom:10px;    
+    font-weight: 400;
+}
+
+.form form label{    
+    display: block;
+    margin-bottom:10px;
+}
+
+.form form input{
+    border:none;    
+    padding:10px;    
+    width: 70%;
+    border-bottom:1px solid var(--color-logo)
+}
+
+.form button{
+    border:none;
+    padding:10px;
+    color:white;
+    font-family: var(--font-nav);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color:var(--color-logo);
+    border-bottom:1px solid white;
+}
+
+.form button:hover{
+    color:var(--bg-nav);
+}
+
+footer{    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    align-content: space-between;
+    text-align: center;
+    position:fixed;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer button{
+    border:none;
+    padding:10px;
+    flex:1;    
+    color:white;
+    font-family: var(--font-main);
+    vertical-align: middle;
+    display:inline-block;    
+}
+
+footer button i{
+    font-size:2em;
+    margin-right:10px;
+}
+
+footer .button-facebook{
+    background-color:var(--color-facebook);    
+}
+
+footer .button-google{
+    background-color: var(--color-google);
+}
+
+button{
+    cursor:pointer;
+}
+
+footer button:hover{
+    color:black;
+}
